@@ -1,6 +1,6 @@
 from sqlalchemy.orm import mapped_column, Mapped
 
-from database import Base
+from src.database import Base
 
 
 class ShortUrlOrm(Base):

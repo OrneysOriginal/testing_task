@@ -8,15 +8,8 @@ git clone https://github.com/OrneysOriginal/testing_task.git
 ~~~
 cd testing_task
 ~~~
-3. Install all dependencies
+3. Create a file with the extension .db, also change it in the file .env db_name
+4. Launch Docker
 ~~~
-pip install -r requirements.txt
-~~~
-4. Go to the src folder
-~~~
-cd src
-~~~
-5. Launch the project
-~~~
-uvicorn main:app --reload
+docker compose up
 ~~~

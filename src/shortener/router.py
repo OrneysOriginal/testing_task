@@ -2,11 +2,11 @@ from fastapi import APIRouter, Depends
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from database import get_async_session
+from src.database import get_async_session
 from secrets import token_urlsafe
 
-from shortener.models import ShortUrlOrm
-from shortener.schemas import SUrl
+from src.shortener.models import ShortUrlOrm
+from src.shortener.schemas import SUrl
 
 
 shortener_router = APIRouter(
